@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Contacto</title>
+  
+</head>
+<body>
+
+  <header>
+    
+     <!-- Tabla para barra de navegacion  -->
+   <center>
+    <section>
+
+      <table border="1">
+        <tr>
+
+          <th><font size="5"><a href="index.html">   Página Principal    </a></font></th>
+          <th><font size="5"><a href="libros.html">    Libros    </a></font></th>
+          <th><font size="5"><a href="peliculas.html">   Películas    </a></font></th>
+          <th><font size="5"><a href="videojuegos.html">   Videojuegos   </a></font></th>
+          <th><font size="5"><a href="contacto.html">    Contacto    </a></font></th>
+
+        </tr>
+        
+      </table>
+
+      <h1>Contacto</h1>
+
+  </header>
+
+  <main>
+    <section>
+      <h2>&nbsp;&nbsp;Envía tu sugerencia</h2>
+      <p>&nbsp;&nbsp; ¿Tienes alguna sugerencia sobre qué libros, películas o videojuegos deberíamos reseñar? ¡Nos encantaría escuchar tu opinión!</p>
+      
+      <form action="enviar_sugerencia.php" method="POST">
+        <label for="nombre">&nbsp;&nbsp;Nombre:</label><br>
+        &nbsp;&nbsp;<input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">&nbsp;&nbsp;Correo Electrónico:</label><br>
+        &nbsp;&nbsp;<input type="email" id="email" name="email" required><br><br>
+
+        <label for="sugerencia">&nbsp;&nbsp;Sugerencia:</label><br>
+        &nbsp;&nbsp;<textarea id="sugerencia" name="sugerencia" rows="4" cols="50" placeholder="Escribe tu sugerencia aquí..." required></textarea><br><br>
+
+        &nbsp;&nbsp;<input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Reseñas Web Jimmy Román</p>
+  </footer>
+
+</body>
+</html>
