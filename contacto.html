@@ -1,59 +1,49 @@
 <!DOCTYPE html>
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
- 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto</title>
-  
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
+<header>
+  <h1>Contacto</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="libros.html">Libros</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="videojuegos.html">Videojuegos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-section">
+    <h2>Envía tu sugerencia</h2>
+    <p>¿Tienes alguna sugerencia sobre qué libros, películas o videojuegos deberíamos reseñar? ¡Nos encantaría escuchar tu opinión!</p>
     
-     <!-- Tabla para barra de navegacion  -->
-   <center>
-    <section>
+    <form action="enviar_sugerencia.php" method="POST" class="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-      <table border="1">
-        <tr>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required />
 
-          <th><font size="5"><a href="index.html">   Página Principal    </a></font></th>
-          <th><font size="5"><a href="libros.html">    Libros    </a></font></th>
-          <th><font size="5"><a href="peliculas.html">   Películas    </a></font></th>
-          <th><font size="5"><a href="videojuegos.html">   Videojuegos   </a></font></th>
-          <th><font size="5"><a href="contacto.html">    Contacto    </a></font></th>
+      <label for="sugerencia">Sugerencia:</label>
+      <textarea id="sugerencia" name="sugerencia" rows="4" placeholder="Escribe tu sugerencia aquí..." required></textarea>
 
-        </tr>
-        
-      </table>
+      <button type="submit" class="buy-button">Enviar</button>
+    </form>
+  </section>
+</main>
 
-      <h1>Contacto</h1>
-
-  </header>
-
-  <main>
-    <section>
-      <h2>&nbsp;&nbsp;Envía tu sugerencia</h2>
-      <p>&nbsp;&nbsp; ¿Tienes alguna sugerencia sobre qué libros, películas o videojuegos deberíamos reseñar? ¡Nos encantaría escuchar tu opinión!</p>
-      
-      <form action="enviar_sugerencia.php" method="POST">
-        <label for="nombre">&nbsp;&nbsp;Nombre:</label><br>
-        &nbsp;&nbsp;<input type="text" id="nombre" name="nombre" required><br><br>
-
-        <label for="email">&nbsp;&nbsp;Correo Electrónico:</label><br>
-        &nbsp;&nbsp;<input type="email" id="email" name="email" required><br><br>
-
-        <label for="sugerencia">&nbsp;&nbsp;Sugerencia:</label><br>
-        &nbsp;&nbsp;<textarea id="sugerencia" name="sugerencia" rows="4" cols="50" placeholder="Escribe tu sugerencia aquí..." required></textarea><br><br>
-
-        &nbsp;&nbsp;<input type="submit" value="Enviar">
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Reseñas Web Jimmy Román</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Reseñas Web Jimmy Román</p>
+</footer>
 
 </body>
 </html>
