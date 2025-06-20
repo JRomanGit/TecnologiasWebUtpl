@@ -1,91 +1,63 @@
 <!DOCTYPE html>
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reseñas de Libros</title>
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
+<header>
+  <h1>Reseñas de Libros</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="libros.html">Libros</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="videojuegos.html">Videojuegos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-   <!-- Tabla para barra de navegacion  -->
-   <center>
-    <section>
+<main>
 
-      <table border="1">
-        <tr>
+  <section class="review">
+    <img src="images/gatsby.jpg" alt="Portada de El Gran Gatsby" width="150">
+    <div class="text-content">
+      <h2>Reseña 1: El Gran Gatsby</h2>
+      <p><strong>Descripción:</strong> El Gran Gatsby es una novela sobre el amor, la ambición y la obsesión durante la época del jazz en los Estados Unidos. El protagonista, Nick Carraway, narra la vida de su enigmático vecino, Gatsby, mientras explora el sueño americano y la decadencia de la sociedad de la época.</p>
+      <p><strong>Autor:</strong> F. Scott Fitzgerald</p>
+      <p><a class="buy-button" href="https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567" target="_blank">Comprar El Gran Gatsby</a></p>
+    </div>
+  </section>
 
-          <th><font size="5"><a href="index.html">   Página Principal    </a></font></th>
-          <th><font size="5"><a href="libros.html">    Libros    </a></font></th>
-          <th><font size="5"><a href="peliculas.html">   Películas    </a></font></th>
-          <th><font size="5"><a href="videojuegos.html">   Videojuegos   </a></font></th>
-          <th><font size="5"><a href="contacto.html">    Contacto    </a></font></th>
+  <section class="review">
+    <img src="images/cienasoledad.jpg" alt="Portada de Cien Años de Soledad" width="150">
+    <div class="text-content">
+      <h2>Reseña 2: Cien Años de Soledad</h2>
+      <p><strong>Descripción:</strong> Esta novela es la obra más famosa de Gabriel García Márquez y un pilar del realismo mágico. Narra la historia de la familia Buendía en el pueblo ficticio de Macondo, abordando temas como el amor, el destino, y la soledad a lo largo de varias generaciones.</p>
+      <p><strong>Autor:</strong> Gabriel García Márquez</p>
+      <p><a class="buy-button" href="https://www.amazon.com/Cien-Años-Soledad-Gabriel-García/dp/0307474727" target="_blank">Comprar Cien Años de Soledad</a></p>
+    </div>
+  </section>
 
-        </tr>
-        
-      </table>
+  <section class="review">
+    <img src="images/1984.jpg" alt="Portada de 1984" width="150">
+    <div class="text-content">
+      <h2>Reseña 3: 1984</h2>
+      <p><strong>Descripción:</strong> 1984 es una de las obras más importantes de la literatura distópica, escrita por George Orwell. La historia se desarrolla en un futuro totalitario donde la libertad está controlada por un gobierno opresivo. El protagonista, Winston Smith, lucha por encontrar la verdad en un mundo plagado de vigilancia y represión.</p>
+      <p><strong>Autor:</strong> George Orwell</p>
+      <p><a class="buy-button" href="https://www.amazon.com/1984-George-Orwell/dp/0451524934" target="_blank">Comprar 1984</a></p>
+    </div>
+  </section>
 
-      <h1>Reseñas de Libros</h1>
+</main>
 
-    </header>
+<footer>
+  <p>&copy; 2025 Reseñas de Libros</p>
+</footer>
 
-    <main>
-      <section>
-        <h2>&nbsp;Reseña 1: El Gran Gatsby</h2>
-        <table border="0" cellspacing="40" cellpadding="10">
-          <tr>
-            <td>
-              <img src="images/gatsby.jpg" alt="Portada de El Gran Gatsby" width="150">
-            </td>
-            <td>
-
-              <p><font size="4"><strong>Descripción:</strong> El Gran Gatsby es una novela sobre el amor, la ambición y la obsesión durante la época del jazz en los Estados Unidos. El protagonista, Nick Carraway, narra la vida de su enigmático vecino, Gatsby, mientras explora el sueño americano y la decadencia de la sociedad de la época.</font></p>
-              <p><strong>Autor:</strong> F. Scott Fitzgerald</p>
-              <p><a href="https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567" target="_blank">Comprar El Gran Gatsby</a></p>
-            </td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
-        <h2>&nbsp;Reseña 2: Cien Años de Soledad</h2>
-        <table border="0" cellspacing="40" cellpadding="10">
-          <tr>
-            <td>
-              <img src="images/cienasoledad.jpg" alt="Portada de Cien Años de Soledad" width="150">
-            </td>
-            <td>
-
-              <p><font size="4"><strong>Descripción:</strong> Esta novela es la obra más famosa de Gabriel García Márquez y un pilar del realismo mágico. Narra la historia de la familia Buendía en el pueblo ficticio de Macondo, abordando temas como el amor, el destino, y la soledad a lo largo de varias generaciones.</font></p>
-              <p><strong>Autor:</strong> Gabriel García Márquez</p>
-              <p><a href="https://www.amazon.com/Cien-Años-Soledad-Gabriel-García/dp/0307474727" target="_blank">Comprar Cien Años de Soledad</a></p>
-            </td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
-        <h2>&nbsp;Reseña 3: 1984</h2>
-        <table border="0" cellspacing="40" cellpadding="10">
-          <tr>
-            <td>
-              <img src="images/1984.jpg" alt="Portada de 1984" width="150">
-            </td>
-            <td>
-
-              <p><strong><font size="4">Descripción:</strong> 1984 es una de las obras más importantes de la literatura distópica, escrita por George Orwell. La historia se desarrolla en un futuro totalitario donde la libertad está controlada por un gobierno opresivo. El protagonista, Winston Smith, lucha por encontrar la verdad en un mundo plagado de vigilancia y represión.</font></p>
-              <p><strong>Autor:</strong> George Orwell</p>
-              <p><a href="https://www.amazon.com/1984-George-Orwell/dp/0451524934" target="_blank">Comprar 1984</a></p>
-            </td>
-          </tr>
-        </table>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Reseñas Web</p>
-    </footer>
-
-  </body>
-  </html>
+</body>
+</html>
