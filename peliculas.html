@@ -1,97 +1,63 @@
 <!DOCTYPE html>
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reseñas de Películas</title>
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-   
-    <!-- Tabla para barra de navegacion  -->
-    <center>
-      <section>
-        
-        <table border="1">
-          <tr>
-            
-            <th><font size="5"><a href="index.html">   Página Principal    </a></font></th>
-            <th><font size="5"><a href="libros.html">    Libros    </a></font></th>
-            <th><font size="5"><a href="peliculas.html">   Películas    </a></font></th>
-            <th><font size="5"><a href="videojuegos.html">   Videojuegos   </a></font></th>
-            <th><font size="5"><a href="contacto.html">    Contacto    </a></font></th>
-            
-          </tr>
-          
-        </table>
-        <h1>Reseñas de Películas</h1>
+<header>
+  <h1>Reseñas de Películas</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="libros.html">Libros</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="videojuegos.html">Videojuegos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-      </header>
+<main>
 
-      <main>
-        <section>
-          <h2>&nbsp;Reseña 1: Inception</h2>
+  <section class="review">
+    <img src="images/inception.png" alt="Pelicula Inception" width="150">
+    <div class="text-content">
+      <h2>Reseña 1: Inception</h2>
+      <p><strong>Descripción:</strong> Inception es una película de ciencia ficción que explora el concepto de sueños dentro de sueños. El protagonista, interpretado por Leonardo DiCaprio, debe realizar un "inception" (implantar una idea en la mente de alguien) mientras navega por los diferentes niveles de la mente humana.</p>
+      <p><strong>Director:</strong> Christopher Nolan</p>
+      <p><a class="buy-button" href="https://www.imdb.com/es-es/title/tt1790736/?ref_=fn_all_ttl_2" target="_blank">Ver en IMDB</a></p>
+    </div>
+  </section>
 
-          <table border="0" cellspacing="40" cellpadding="10">
-            <tr>
-              <td>
-                <img src="images/inception.png" alt="Pelicula Inception" width="150">
-              </td>
-              <td>
+  <section class="review">
+    <img src="images/dark_knight.jpg" alt="Pelicula Dark Knight" width="150">
+    <div class="text-content">
+      <h2>Reseña 2: The Dark Knight</h2>
+      <p><strong>Descripción:</strong> The Dark Knight es la segunda película de la trilogía de Batman dirigida por Christopher Nolan. Con una impresionante actuación de Heath Ledger como el Joker, esta película lleva a Batman a enfrentarse con el caos y la corrupción de Gotham City.</p>
+      <p><strong>Director:</strong> Christopher Nolan</p>
+      <p><a class="buy-button" href="https://www.imdb.com/title/tt0468569/" target="_blank">Ver en IMDB</a></p>
+    </div>
+  </section>
 
-                <p><strong><font size="4">Descripción:</strong> Inception es una película de ciencia ficción que explora el concepto de sueños dentro de sueños. El protagonista, interpretado por Leonardo DiCaprio, debe realizar un "inception" (implantar una idea en la mente de alguien) mientras navega por los diferentes niveles de la mente humana.</font></p>
-                <p><strong>Director:</strong> Christopher Nolan</p>
-                <a href="https://www.imdb.com/es-es/title/tt1790736/?ref_=fn_all_ttl_2" target="_blank">Ver en IMDB</a>
-              </td>
-            </tr>
-          </table>
+  <section class="review">
+    <img src="images/la_la_land.jpg" alt="Pelicula La La Land" width="150">
+    <div class="text-content">
+      <h2>Reseña 3: La La Land</h2>
+      <p><strong>Descripción:</strong> La La Land es un musical moderno que cuenta la historia de amor entre una aspirante a actriz y un músico en Los Ángeles. Con música cautivadora y una cinematografía deslumbrante, esta película ganó varios premios, incluidos los Globos de Oro.</p>
+      <p><strong>Director:</strong> Damien Chazelle</p>
+      <p><a class="buy-button" href="https://www.imdb.com/title/tt3783958/" target="_blank">Ver en IMDB</a></p>
+    </div>
+  </section>
 
-        </section>
+</main>
 
-        <section>
-          <h2>&nbsp;Reseña 2: The Dark Knight</h2>
+<footer>
+  <p>&copy; 2025 Reseñas Web</p>
+</footer>
 
-          <table border="0" cellspacing="40" cellpadding="10">
-            <tr>
-              <td>
-                <img src="images/dark_knight.jpg" alt="Pelicula Dark Knight" width="150">
-              </td>
-              <td>
-               
-                <p><strong><font size="4">Descripción:</strong> The Dark Knight es la segunda película de la trilogía de Batman dirigida por Christopher Nolan. Con una impresionante actuación de Heath Ledger como el Joker, esta película lleva a Batman a enfrentarse con el caos y la corrupción de Gotham City.</font></p>
-                <p><strong>Director:</strong> Christopher Nolan</p>
-                <a href="https://www.imdb.com/title/tt0468569/" target="_blank">Ver en IMDB</a>
-              </td>
-            </tr>
-          </table>
-        </section>
-
-        <section>
-          <h2>&nbsp;Reseña 3: La La Land</h2>
-
-          <table border="0" cellspacing="40" cellpadding="10">
-            <tr>
-              <td>
-                <img src="images/la_la_land.jpg" alt="Pelicula La La Land" width="150">
-              </td>
-              <td>
-
-                
-                <p><strong><font size="4">Descripción:</strong> La La Land es un musical moderno que cuenta la historia de amor entre una aspirante a actriz y un músico en Los Ángeles. Con música cautivadora y una cinematografía deslumbrante, esta película ganó varios premios, incluidos los Globos de Oro.</font></p>
-                <p><strong>Director:</strong> Damien Chazelle</p>
-
-                <a href="https://www.imdb.com/title/tt3783958/" target="_blank">Ver en IMDB</a>
-              </td>
-            </tr>
-          </table>
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2025 Reseñas Web</p>
-      </footer>
-
-    </body>
-    </html>
+</body>
+</html>
